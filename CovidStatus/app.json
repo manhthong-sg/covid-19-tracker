@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "An application help you follow the information of covid-19 in different country",
+    "githubUrl": "https://github.com/manhthongbui/covid-19-tracker"
   }
 }

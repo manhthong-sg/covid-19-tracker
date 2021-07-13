@@ -17,7 +17,8 @@ export default function App() {
   useEffect(()=>{
     getCounntry()
     .then((result) => {
-      setCountries(result.data)
+      setCountries(result.data);
+      setSelectedCountryId('vn');
     }).catch((err) => {
       console.log({err})
     });
@@ -45,17 +46,20 @@ export default function App() {
   return (
     
       <View style={styles.container}>
+        <ScrollView>
         <CountrySelector style={styles.CountrySelector} value ={selectedCountryId} handleOnChange={handleOnChange} countries={countries}/>
         <Hignlight report={report} />
-        <Summary/>
+        <Summary report={report} />
+        </ScrollView>
       </View>
-    
+      
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop: 50,
     justifyContent: 'space-between',
     backgroundColor: '#fff',
   },

@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'space-between',
+    marginTop: 30,
   },
 
   //So ca nhiem
@@ -83,8 +84,8 @@ const styles = StyleSheet.create({
     //borderColor: 'orange',
     alignItems: 'center',
     borderBottomColor: 'black',
-    borderBottomWidth: 0.7
-    
+    borderBottomWidth: 0.7,
+    marginTop: 50,
   },
   SoCaNhiemFlag:{
     width: 10,
@@ -105,6 +106,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderBottomColor: 'black',
     borderBottomWidth: 0.7,
+    marginTop: 50,
 
   },
   KhoiFlag:{
@@ -125,7 +127,8 @@ const styles = StyleSheet.create({
     //borderColor: 'orange',
     alignItems: 'center',
     borderBottomColor: 'black',
-    borderBottomWidth: 0.7
+    borderBottomWidth: 0.7,
+    marginTop: 50,
   },
   TuVongFlag:{
     width: 10,
