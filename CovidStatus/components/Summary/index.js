@@ -60,7 +60,7 @@ export default function Summary({report}) {
   };
   return (
     <View style={styles.container}> 
-      <Text>Summary</Text>
+      <Text style={{fontSize: 26, fontWeight: 'bold',}}>Chart</Text>
       
       {/* //chart so ca nhiễm */}
       <LineChart
@@ -82,11 +82,12 @@ export default function Summary({report}) {
         bezier
         style={{
           marginVertical: 4,
-          borderRadius: 12
+          borderRadius: 12,
+          marginTop: 40,
         }}
       />
 
-      <Text style={{color: 'black'}}>Số ca nhiễm</Text>
+      <Text style={{color: 'red'}}>Số ca nhiễm</Text>
       
       {/* //chart so ca hồi phục */}
       <LineChart
@@ -108,11 +109,12 @@ export default function Summary({report}) {
         bezier
         style={{
           marginVertical: 4,
-          borderRadius: 12
+          borderRadius: 12,
+          marginTop: 40,
         }}
       />
 
-      <Text style={{color: 'black'}}>Số ca hồi phục</Text>
+      <Text style={{color: 'green'}}>Số ca hồi phục</Text>
 
       {/* //chart so ca chết */}
       <LineChart
@@ -120,6 +122,7 @@ export default function Summary({report}) {
         //width={Dimensions.get('window').width} // from react-native
         width={350}
         height={220}
+
         //yAxisLabel={'$'}
         chartConfig={{
           backgroundColor: 'red',
@@ -134,7 +137,8 @@ export default function Summary({report}) {
         bezier
         style={{
           marginVertical: 4,
-          borderRadius: 12
+          borderRadius: 12,
+          marginTop: 40,
         }}
       />
 
@@ -154,5 +158,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     marginTop: 30,
+    marginBottom: 50,
   },
 });
